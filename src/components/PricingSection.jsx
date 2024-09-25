@@ -74,7 +74,7 @@ const PricingSection = () => {
       </h2>
       <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
         Choose from our flexible pricing plans designed to meet your needs.
-        Whether it's hourly, daily, or weekly, we&apos;ve got you covered.
+        Whether it&apos;s hourly, daily, or weekly, we&apos;ve got you covered.
       </p>
 
       {/* Filter Buttons */}
