@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
@@ -8,7 +9,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h4 className="text-2xl font-bold mb-4">Coworking Space</h4>
+            <div className='mb-4 flex gap-3'>
+                <Image
+                src={"/images/logo.png"}
+                alt='co-working logo'
+                height={50}
+                width={50}
+                className='rounded-full self-center'
+                />
+            <h4 className="text-xl sm:text-2xl self-center font-bold ">Co-Working with Cafe</h4>
+            </div>
             <p className="text-gray-400 mb-4">
               An inspiring workspace designed for creativity and productivity. We cater to freelancers, startups, and remote workers with
               flexible solutions.

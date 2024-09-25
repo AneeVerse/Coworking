@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 const Navbar = ({ isScrolled }) => {
   const navItems = [
-    { name: 'Home', url: '#home' },
     { name: 'About Us', url: '#about' },
     { name: 'Who Are Our Players', url: '#players' },
     { name: 'Amenities', url: '#amenities' },
@@ -25,7 +24,7 @@ const Navbar = ({ isScrolled }) => {
       {/* Navbar for Desktop */}
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 h-16 md:h-20 transition-all duration-300">
         <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+          <Link href={"#"} className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
             <Image
               src="/images/logo.png"
               alt="Coworking Logo"
@@ -33,9 +32,9 @@ const Navbar = ({ isScrolled }) => {
               height={40}
               objectFit="contain"
             />
-          </div>
-          <div className={`text-2xl font-bold ${isScrolled ? "text-[#7a634b]" : "text-white"} transition-colors duration-300`}>
-            Coworking
+          </Link>
+          <div className={`text-lg sm:text-2xl font-bold ${isScrolled ? "text-[#7a634b]" : "text-white"} transition-colors duration-300`}>
+            Co-Working with Cafe
           </div>
         </div>
 
@@ -97,8 +96,8 @@ const Navbar = ({ isScrolled }) => {
                     objectFit="contain"
                   />
                 </div>
-                <div className="text-2xl font-bold text-[#7a634b]">
-                  Coworking
+                <div className="text-md sm:text-2xl font-bold text-[#7a634b]">
+                Co-Working
                 </div>
               </div>
               {/* Close Button */}
