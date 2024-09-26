@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#201203] text-white py-12">
+    <footer className="bg-[#201203] text-white py-12 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto px-4">
         {/* Footer Top */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -66,8 +67,18 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-12 text-center text-gray-300">
+        {/* <div className="mt-12 text-center text-gray-300">
           &copy; 2024 Coworking Space. All rights reserved.
+        </div> */}
+         {/* Footer bottom section */}
+         <div className="mt-8 border-t border-gray-700 pt-6 gap-5 flex flex-col md:flex-row justify-between text-center md:text-left">
+          <p>
+            &copy; {new Date().getFullYear()} Co-Working with Cafe. All Rights
+            Reserved.
+          </p>
+
+          <Link href={"https://aneeverse.com/en/"} className="text-gray-300 hover:text-gray-100 flex justify-center text-center items-center gap-2">Managed & Designed By Aneeverse
+          <Image src={"/images/aneeverse-logo.png"} width={16} height={16} alt="aneeverse logo"/></Link>
         </div>
       </div>
     </footer>

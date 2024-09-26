@@ -57,10 +57,10 @@ const ContactFormSection = () => {
   return (
     <section id='contact' className="relative py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-stretch bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div className="flex flex-col mx-4 lg:flex-row items-stretch bg-white rounded-2xl shadow-lg overflow-hidden">
 
           {/* Left Side: Image */}
-          <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
+          <div className="relative hidden lg:block w-full lg:w-1/2 h-64 lg:h-auto">
             <Image
               src="/images/Mini-Cabin.jpg" // Replace with your actual image path
               alt="Contact Us"

@@ -17,7 +17,7 @@ import {
     { name: 'High-Speed Wifi', icon: <FaWifi /> },
     { name: 'Free Coffee', icon: <FaCoffee /> },
     { name: 'Printing Service', icon: <FaPrint /> },
-    { name: 'Meeting Rooms', icon: <FaChalkboardTeacher /> },
+    // { name: 'Meeting Rooms', icon: <FaChalkboardTeacher /> },
     { name: '24/7 Support', icon: <FaHeadset /> },
     { name: 'Prime Location', icon: <FaMapMarkerAlt /> },
     { name: 'Mail & Package Handling', icon: <FaBoxOpen /> },
@@ -36,7 +36,7 @@ import {
           Discover the range of amenities designed to make your coworking experience comfortable and efficient.
         </p>
   
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {amenities.map((amenity) => (
             <div
               key={amenity.name}

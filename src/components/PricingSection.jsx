@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const pricing = [
   { name: "1 Hour", price: "₹1000", type: "hourly" },
@@ -67,6 +68,13 @@ const PricingSection = () => {
     return plan.type === filterType;
   });
 
+  // Animation settings for pop-in effect
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+    exit: { opacity: 0, scale: 0.9 },
+  };
+
   return (
     <section id="pricing" className="max-w-7xl mx-auto py-16 px-4">
       <h2 className="text-5xl font-bold text-center mb-6 tracking-wide">
@@ -111,27 +119,34 @@ const PricingSection = () => {
         </button>
       </div>
 
-      {/* Pricing Cards */}
+      {/* Pricing Cards with pop-in animation */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {filteredPricing.map((plan) => (
-          <div
-            key={plan.name}
-            className="relative p-8 border border-gray-300 rounded-lg text-center bg-white shadow-lg"
-          >
-            <h3 className="text-2xl font-semibold mb-4 text-[#6b533a] uppercase tracking-wider">
-              {plan.name}
-            </h3>
-            <p className="text-4xl font-bold text-[#6b533a] mb-6">
-              {plan.price}
-            </p>
-            <button
-              onClick={() => handleBookPlan(plan)}
-              className="bg-[#6b533a] text-white px-6 py-3 rounded-full"
+        <AnimatePresence mode="wait">
+          {filteredPricing.map((plan) => (
+            <motion.div
+              key={plan.name}
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              transition={{ duration: 0.5, type: "spring", bounce: 0.4 }}
+              className="relative p-8 border border-gray-300 rounded-lg text-center bg-white shadow-lg"
             >
-              Book Plan
-            </button>
-          </div>
-        ))}
+              <h3 className="text-2xl font-semibold mb-4 text-[#6b533a] uppercase tracking-wider">
+                {plan.name}
+              </h3>
+              <p className="text-4xl font-bold text-[#6b533a] mb-6">
+                {plan.price}
+              </p>
+              <button
+                onClick={() => handleBookPlan(plan)}
+                className="bg-[#6b533a] text-white px-6 py-3 rounded-full"
+              >
+                Book Plan
+              </button>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
 
       {/* Modal Form */}

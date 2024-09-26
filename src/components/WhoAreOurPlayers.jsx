@@ -22,7 +22,7 @@ const PlayerSection = () => {
         We cater to various professional profiles, offering a versatile space for growth, networking, and productivity.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {players.map((player, index) => (
           <motion.div
             whileHover={{ scale: 1.1 }}
