@@ -14,26 +14,26 @@ const geistMono = localFont({
 
 // Metadata with title, description, and OpenGraph settings
 export const metadata = {
-  title: "Coworking Space - Professional, Vibrant & Flexible Workspace",
-  description: "Explore our coworking space, designed for startups, freelancers, and remote workers. Join us for a creative, productive, and inspiring environment.",
+  title: "Co-Working with Cafe - Professional, Vibrant & Flexible Workspace",
+  description: "Explore our Co-Working with Cafe, designed for startups, freelancers, and remote workers. Join us for a creative, productive, and inspiring environment.",
   openGraph: {
-    title: "Coworking Space",
-    description: "Explore our coworking space, designed for startups, freelancers, and remote workers.",
+    title: "Co-Working with Cafe",
+    description: "Explore our Co-Working with Cafe, designed for startups, freelancers, and remote workers.",
     url: "https://yourwebsite.com",
     images: [
       {
         url: "/images/og-image.jpg", // Replace with your Open Graph image path
         width: 800,
         height: 600,
-        alt: "Coworking Space Image",
+        alt: "Co-Working with Cafe Image",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@yourtwitterhandle",
-    title: "Coworking Space",
-    description: "Explore our coworking space, designed for startups, freelancers, and remote workers.",
+    title: "Co-Working with Cafe",
+    description: "Explore our Co-Working with Cafe, designed for startups, freelancers, and remote workers.",
     image: "/images/twitter-card-image.jpg", // Replace with your Twitter image path
   },
   icons: {
