@@ -138,7 +138,7 @@ const PricingSection = () => {
       {isFormOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
           <div
-            className="bg-white rounded-lg shadow-lg w-full max-w-lg mx-3 p-4 sm:p-8 relative overflow-y-auto"
+            className="bg-white rounded-lg shadow-lg w-full max-w-lg mx-3 pt-4 sm:pt-8 px-4 sm:px-8 relative overflow-y-auto"
             style={{ height: "90%", scrollbarWidth: "none" }} // Hide scrollbar for Firefox
           >
             <style jsx>{`
@@ -243,7 +243,7 @@ const PricingSection = () => {
                   placeholder="Your message"
                 ></textarea>
               </div>
-              <div className="text-center sticky bottom-0 bg-white py-2">
+              <div className="text-center sticky pb-8 bottom-0 bg-white py-2">
                 <button
                   type="submit"
                   className="bg-[#6b533a] w-full text-white px-6 py-3 rounded-md"
