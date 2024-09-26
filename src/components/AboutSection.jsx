@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AboutUsSection = () => {
   return (
@@ -17,20 +18,20 @@ const AboutUsSection = () => {
           <div className="w-16 h-1 bg-[#6b533a] mb-4"></div> {/* Decorative Divider */}
 
           <p className="text-gray-600 leading-relaxed">
-            Welcome to our coworking space. We provide an inspiring and productive work environment for a diverse range of professionals. Whether you&apos;re a startup, freelancer, or a remote worker, our workspace caters to all your needs with modern amenities and a vibrant community.
+          Welcome to our unique coworking space, where work and cafe culture co-exist seamlessly. We offer an inspiring and productive environment tailored for startups, freelancers, and remote workers. With modern amenities and a vibrant community, we provide everything you need to achieve your goals.
           </p>
 
           <blockquote className="italic text-[#6b533a] font-semibold border-l-4 border-[#6b533a] pl-4">
-          &quot;Fostering creativity and collaboration in a well-designed space where individuals thrive.&quot;
+          &quot;Fostering creativity and collaboration, our space is designed for individuals and teams to thrive. Find the perfect balance between focus and connection.&quot;
           </blockquote>
 
           <p className="text-gray-600 leading-relaxed">
-            Our mission is to create a dynamic community that supports innovation and success. Join us and experience a space where you can grow and collaborate.
+          Our mission is to build a dynamic community that nurtures innovation and success. Join us and experience a space where you can grow, connect, and collaborate, all in one inspiring setting.
           </p>
 
-          <button className="bg-[#6b533a] text-white px-8 py-3 rounded-full mt-6 hover:bg-[#58422a] transition-shadow duration-300 shadow-lg hover:shadow-xl">
+          <Link href={"#amenities"} className="bg-[#6b533a] inline-block text-white px-8 py-3 rounded-full mt-6 hover:bg-[#58422a] transition-shadow duration-300 shadow-lg hover:shadow-xl">
             Learn More
-          </button>
+          </Link>
         </motion.div>
 
         {/* Right Side: Image Gallery with Shadow Effects */}
@@ -42,7 +43,7 @@ const AboutUsSection = () => {
         >
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/Lux-Cabin_1.jpg"
+              src="/images/img1.jpg"
               alt="Workspace 1"
               layout="fill"
               objectFit="cover"
@@ -51,7 +52,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/Lux-Desk.jpg"
+              src="/images/img2.jpg"
               alt="Workspace 2"
               layout="fill"
               objectFit="cover"
@@ -60,7 +61,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/Mini-Cabin.jpg"
+              src="/images/img3.jpg"
               alt="Workspace 3"
               layout="fill"
               objectFit="cover"
@@ -69,7 +70,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/studio_0.jpg"
+              src="/images/img4.jpg"
               alt="Workspace 4"
               layout="fill"
               objectFit="cover"

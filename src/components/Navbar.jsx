@@ -34,7 +34,7 @@ const Navbar = ({ isScrolled }) => {
             />
           </Link>
           <div className={`text-lg sm:text-2xl font-bold ${isScrolled ? "text-[#7a634b]" : "text-white"} transition-colors duration-300`}>
-            Co-Working with Cafe
+            {"Co-Working with Cafe".toUpperCase()}
           </div>
         </div>
 
@@ -97,7 +97,7 @@ const Navbar = ({ isScrolled }) => {
                   />
                 </div>
                 <div className="text-md sm:text-2xl font-bold text-[#7a634b]">
-                Co-Working
+                {"Co-Working".toUpperCase()}
                 </div>
               </div>
               {/* Close Button */}

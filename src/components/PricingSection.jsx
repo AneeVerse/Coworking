@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const pricing = [
-  { name: "1 Hour", price: "₹1000", type: "hourly" },
-  { name: "4 Hours", price: "₹3000", type: "hourly" },
-  { name: "1 Day", price: "₹5000", type: "day" },
-  { name: "5 Days", price: "₹20000", type: "day" },
-  { name: "10 Days", price: "₹35000", type: "day" },
-  { name: "15 Days", price: "₹50000", type: "day" },
+  { name: "1 Hour Pass", price: "₹399", type: "hourly" },
+  { name: "4 Hours Pass", price: "₹549", type: "hourly" },
+  { name: "1 Day Pass", price: "₹745", type: "day" },
+  { name: "5 Days Pass", price: "₹1250", type: "day" },
+  { name: "10 Days Pass", price: "₹2250", type: "day" },
+  { name: "15 Days Pass", price: "₹4500", type: "day" },
 ];
 
 const PricingSection = () => {
@@ -142,7 +142,7 @@ const PricingSection = () => {
                 onClick={() => handleBookPlan(plan)}
                 className="bg-[#6b533a] text-white px-6 py-3 rounded-full"
               >
-                Book Plan
+                Book Now
               </button>
             </motion.div>
           ))}

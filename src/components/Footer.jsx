@@ -18,7 +18,7 @@ const Footer = () => {
                 width={50}
                 className='rounded-full self-center'
                 />
-            <h4 className="text-xl sm:text-2xl self-center font-bold ">Co-Working with Cafe</h4>
+            <h4 className="text-xl sm:text-2xl self-center font-bold ">{"Co-Working with Cafe".toUpperCase()}</h4>
             </div>
             <p className="text-gray-400 mb-4">
               An inspiring workspace designed for creativity and productivity. We cater to freelancers, startups, and remote workers with

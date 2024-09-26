@@ -1,19 +1,19 @@
 "use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaUserTie, FaRocket, FaLaptop, FaBuilding, FaMugHot, FaBook } from 'react-icons/fa';
+import { FaLaptop, FaRocket, FaMugHot, FaBaby, FaBook, FaUserCircle } from 'react-icons/fa'; // Updated icons
 
 const players = [
-  { name: 'Consultants', icon: <FaUserTie /> },
-  { name: 'Startups', icon: <FaRocket /> },
-  { name: 'Remote Working Employees', icon: <FaLaptop /> },
-  { name: 'CA Firms', icon: <FaBuilding /> },
-  { name: 'Freelancers', icon: <FaMugHot /> },
-  { name: 'Students', icon: <FaBook /> },
+  { name: 'Someone who wants a space to work in peace', icon: <FaUserCircle /> }, // New description and icon
+  { name: 'Remote Working Employees', icon: <FaLaptop /> }, 
+  { name: 'Startups', icon: <FaRocket /> }, 
+  { name: 'Freelancers', icon: <FaMugHot /> }, 
+  { name: 'Working Parents', icon: <FaBaby /> }, // New addition and icon for working parents
+  { name: 'Students who want a quiet space', icon: <FaBook /> }, 
 ];
 
 const PlayerSection = () => {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0); // Changed default activeIndex to 0
 
   return (
     <section id='players' className="max-w-7xl mx-auto py-16 px-4">
@@ -29,7 +29,7 @@ const PlayerSection = () => {
             whileTap={{ scale: 0.95 }}
             key={player.name}
             onClick={() => setActiveIndex(index)}
-            className={`relative cursor-pointer  p-4 lg:p-8 border border-gray-300 rounded-lg text-center transition-transform duration-300 shadow-lg ${
+            className={`relative cursor-pointer p-4 lg:p-8 border border-gray-300 rounded-lg text-center transition-transform duration-300 shadow-lg ${
               activeIndex === index
                 ? 'bg-[#6b533a] text-white transform scale-105 shadow-xl'
                 : 'bg-white text-gray-800 hover:shadow-md'
@@ -38,7 +38,9 @@ const PlayerSection = () => {
             {/* Icon with background */}
             <div className="relative flex items-center justify-center mb-6">
               <div className={`absolute w-16 h-16 bg-${activeIndex === index ? 'white' : '#6b533a'} opacity-20 rounded-full`}></div>
-              <div className={`text-6xl ${activeIndex === index ? 'text-white' : 'text-[#6b533a]'} z-10`}>{player.icon}</div>
+              <div className={`text-6xl ${activeIndex === index ? 'text-white' : 'text-[#6b533a]'} z-10`}>
+                {player.icon}
+              </div>
             </div>
 
             <h3 className="text-2xl font-semibold mb-4">{player.name}</h3>

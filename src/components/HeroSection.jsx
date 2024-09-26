@@ -23,12 +23,12 @@ const HeroSection = () => {
     <div className="relative">
       {/* Hero Background */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/main-banner5.jpg" 
-          alt="Workspace"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
+        <video
+          src="/images/fd.mp4"
+          autoPlay
+          muted
+          loop
+          className="h-full w-full object-cover"
         />
       </div>
 
@@ -53,10 +53,10 @@ const HeroSection = () => {
             className="text-white"
           >
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-wider leading-tight">
-              Professional, Vibrant & Flexible Workspace
+              1st & Best Co-working Space with Cafe in New Mumbai
             </h1>
             <p className="text-xl md:text-2xl mb-8">
-              Co-Working and Event Space in Mulund
+              Elevate Work at New Mumbai’s Top Co-working Space & Cafe.
             </p>
             <a href="#pricing" className="bg-[#7a634b] hover:bg-[#574533] text-white px-8 py-4 rounded-full transition-shadow duration-300 shadow-lg hover:shadow-xl">
               See Plans
