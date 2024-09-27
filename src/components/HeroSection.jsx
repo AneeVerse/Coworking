@@ -52,13 +52,13 @@ const HeroSection = () => {
             transition={{ duration: 1 }}
             className="text-white"
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-wider leading-tight">
+            <h1 className=" text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-wider leading-tight">
               1st & Best Co-working Space with Cafe in New Mumbai
             </h1>
-            <p className="text-xl md:text-2xl mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8">
               Elevate Work at New Mumbai’s Top Co-working Space & Cafe.
             </p>
-            <a href="#pricing" className="bg-[#7a634b] hover:bg-[#574533] text-white px-8 py-4 rounded-full transition-shadow duration-300 shadow-lg hover:shadow-xl">
+            <a href="#pricing" className="bg-[#7a634b] hover:bg-[#574533] text-white px-8 py-3 sm:py-4 rounded-full transition-shadow duration-300 shadow-lg hover:shadow-xl">
               See Plans
             </a>
           </motion.div>
