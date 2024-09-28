@@ -58,10 +58,10 @@ const Footer = () => {
               <FaPhoneAlt className="mr-2" /> +91 9136062437
             </div>
             <div className="flex items-center text-gray-300 mb-2">
-              <FaEnvelope className="mr-2" /> info@coworking.com
+              <FaEnvelope className="mr-2" /> info@casinocafe.in
             </div>
             <div className="flex items-center text-gray-300">
-              <FaMapMarkerAlt className="mr-2" /> 123 Coworking Street, Mulund, Mumbai, India
+              <FaMapMarkerAlt className="mr-2" /> Shop #22, Co-Woriking with Cafe, BHAGWATI ELEGANZA, plot #12, near NMMT Bus Depot, Sector 11, Ghansoli, Navi Mumbai, Maharashtra 400701
             </div>
           </div>
         </div>
