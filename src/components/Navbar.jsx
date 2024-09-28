@@ -61,11 +61,11 @@ const Navbar = ({ isScrolled }) => {
         {/* Phone Number for Desktop */}
         <div className="hidden lg:flex items-center space-x-4">
           <Link
-            href="tel:+919769241829"
+            href="tel:+919136062437 "
             className={`flex items-center space-x-2 ${isScrolled ? "text-gray-800 hover:text-[#7a634b]" : "text-gray-200 hover:text-[#ffff]"} transition-all`}
           >
             <FiPhoneCall className="text-lg" />
-            <span>+91 97692 41829</span>
+            <span>+91 9136062437</span>
           </Link>
         </div>
       </div>

@@ -55,7 +55,7 @@ const Footer = () => {
           <div>
             <h4 className="text-2xl font-bold mb-4">Contact Us</h4>
             <div className="flex items-center text-gray-300 mb-2">
-              <FaPhoneAlt className="mr-2" /> +91 97692 41829
+              <FaPhoneAlt className="mr-2" /> +91 9136062437
             </div>
             <div className="flex items-center text-gray-300 mb-2">
               <FaEnvelope className="mr-2" /> info@coworking.com
