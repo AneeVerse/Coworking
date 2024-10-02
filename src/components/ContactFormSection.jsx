@@ -62,7 +62,7 @@ const ContactFormSection = () => {
           {/* Left Side: Image */}
           <div className="relative hidden lg:block w-full lg:w-1/2 h-64 lg:h-auto">
             <Image
-              src="/images/img3.jpg" // Replace with your actual image path
+              src="/images/pic5.webp" // Replace with your actual image path
               alt="Contact Us"
               layout="fill"
               objectFit="cover"
