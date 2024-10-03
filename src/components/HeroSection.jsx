@@ -24,7 +24,7 @@ const HeroSection = () => {
       {/* Hero Background */}
       <div className="absolute inset-0 z-0">
         <video
-          src="/images/banner-vid2.mp4"
+          src="/images/banner-video.mp4"
           autoPlay
           muted
           loop
@@ -68,7 +68,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="px-0 py-0 shadow-lg rounded-lg w-full md:w-auto"
+            className="px-0 py-0 rounded-lg w-full md:w-auto"
           >
             <ContactForm />
           </motion.div>
