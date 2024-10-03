@@ -24,7 +24,7 @@ const HeroSection = () => {
       {/* Hero Background */}
       <div className="absolute inset-0 z-0">
         <video
-          src="/images/fd.mp4"
+          src="/images/banner-vid2.mp4"
           autoPlay
           muted
           loop

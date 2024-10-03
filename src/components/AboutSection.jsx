@@ -52,7 +52,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/pic1.webp"
+              src="/images/pic6.webp"
               alt="Workspace 2"
               layout="fill"
               objectFit="cover"
@@ -61,7 +61,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/pic3.webp"
+              src="/images/pic4.webp"
               alt="Workspace 3"
               layout="fill"
               objectFit="cover"
@@ -70,7 +70,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/pic4.webp"
+              src="/images/pic7.webp"
               alt="Workspace 4"
               layout="fill"
               objectFit="cover"
