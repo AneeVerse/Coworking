@@ -94,12 +94,15 @@ const ContactForm = () => {
       <div className="flex flex-col">
         <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number</label>
         <input
-          type="text"
+          type="tel"
           id="phone"
           name="phone"
           required
+          minLength="10"
+          maxLength="10"
+          pattern="[0-9]{10}"
           className="mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#8B4513] text-gray-800"
-          placeholder="+91 12345 67890"
+          placeholder="9136062437"
           value={formData.phone}
           onChange={handleInputChange}
         />

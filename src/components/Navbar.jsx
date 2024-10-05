@@ -51,7 +51,7 @@ const Navbar = ({ isScrolled }) => {
             <Link
               key={ind}
               href={item.url}
-              className={`${isScrolled ? "text-gray-800 hover:text-[#7a634b]" : "text-gray-200 hover:text-[#ffff]"} transition-colors duration-300 cursor-pointer`}
+              className={`${isScrolled ? "text-gray-800 hover:text-[#7a634b]" : "text-gray-200 hover:text-[#ffff]"} transition-colors duration-300 cursor-pointer font-semibold`}
             >
               {item.name}
             </Link>
