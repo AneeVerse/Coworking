@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const pricing = [
-  { name: "1 Hour Pass", price: "₹399", type: "hourly" },
-  { name: "4 Hours Pass", price: "₹549", type: "hourly" },
-  { name: "1 Day Pass", price: "₹745", type: "day" },
-  { name: "5 Days Pass", price: "₹1250", type: "day" },
-  { name: "10 Days Pass", price: "₹2250", type: "day" },
-  { name: "15 Days Pass", price: "₹4500", type: "day" },
+  { name: "1 Hour Pass", des:  <p>Cup Of Coffee<br/>or</p>, price: "₹200", type: "hourly" },
+  { name: "4 Hours Pass", des: "", price: "₹499", type: "hourly" },
+  { name: "6 Hours Pass", des: "", price: "₹599", type: "hourly" },
+  { name: "8 Hours Pass", des: "", price: "₹799", type: "hourly" },
+  { name: "5 Days Pass", des: <p>Saturday & Sunday will charge on Hourly basis</p>, price: "₹4000", type: "day" },
+  { name: "10 Days Pass", des: <p>Saturday & Sunday will charge on Hourly basis</p>, price: "₹6999", type: "day" },
+  { name: "24 Days Pass", des: <p>Saturday & Sunday will charge on Hourly basis</p>, price: "₹8999", type: "day" },
 ];
 
 const PricingSection = () => {
@@ -80,10 +81,11 @@ const PricingSection = () => {
       <h2 className="text-5xl font-bold text-center mb-6 tracking-wide">
         Flexible Pricing
       </h2>
-      <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+      <p className="text-center text-gray-600 max-w-2xl mx-auto leading-relaxed">
         Choose from our flexible pricing plans designed to meet your needs.
         Whether it&apos;s hourly, daily, or weekly, we&apos;ve got you covered.
       </p>
+      <p className="text-center mt-3 font-semibold text-[#6b533a] text-2xl sm:text-3xl mb-8">20% off on Food & Drink Bill</p>
 
       {/* Filter Buttons */}
       <div className="flex justify-center space-x-4 mb-8">
@@ -130,11 +132,14 @@ const PricingSection = () => {
               animate="visible"
               exit="exit"
               transition={{ duration: 0.5, type: "spring", bounce: 0.4 }}
-              className="relative p-8 border border-gray-300 rounded-lg text-center bg-white shadow-lg"
+              className="relative flex flex-col justify-between p-8 border border-gray-300 rounded-lg text-center bg-white shadow-lg"
             >
               <h3 className="text-2xl font-semibold mb-4 text-[#6b533a] uppercase tracking-wider">
                 {plan.name}
               </h3>
+             { plan.des && <div className="text-lg text-[#6b533a] font-semibold">
+                {plan.des}
+              </div>}
               <p className="text-4xl font-bold text-[#6b533a] mb-6">
                 {plan.price}
               </p>
