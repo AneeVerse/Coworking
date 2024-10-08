@@ -19,7 +19,7 @@ const amenities = [
   { name: 'Clean and Sanitized Workspaces', icon: <FaBroom />, description: 'Enjoy a clean and sanitized workspace for peace of mind.' },
   { name: 'High-Speed Internet', icon: <FaWifi />, description: 'Stay connected with our high-speed internet.' },
   { name: 'Print and Copy', icon: <FaPrint />, description: 'Print and copy your documents with ease.' },
-  { name: 'Cafe - Tea, Coffee, Snacks', icon: <FaCoffee />, description: 'Enjoy tea, coffee, and snacks to keep you energized.' },
+  { name: 'Tea, Coffee, Snacks', icon: <FaCoffee />, description: 'Enjoy tea, coffee, and snacks to keep you energized.' },
   { name: 'Ergonomic Furniture', icon: <FaChair />, description: 'Work comfortably with our ergonomic furniture.' },
   { name: 'Friendly Staff', icon: <FaSmile />, description: 'Our friendly staff is here to assist you with anything.' },
   { name: 'Housekeeping', icon: <FaBroom />, description: 'Housekeeping services to maintain a clean environment.' },
@@ -28,7 +28,7 @@ const amenities = [
   { name: 'Security', icon: <FaShieldAlt />, description: 'Feel safe with our top-notch security services.' },
   { name: 'CCTV Surveillance', icon: <FaCamera />, description: '24/7 CCTV surveillance for added safety.' },
   { name: 'Tea/Coffee Services', icon: <FaConciergeBell />, description: 'Get tea and coffee delivered right to your desk.' },
-  { name: 'Free Parking Space for 2/4 Wheelers', icon: <FaParking />, description: 'Free parking space available for two and four wheelers.' },
+  { name: 'Open Parking Space for 2/4 Wheelers', icon: <FaParking />, description: 'Free parking space available for two and four wheelers.' },
   { name: 'Indoor Games', icon: <FaGamepad />, description: 'Take a break and enjoy indoor games in your free time.' },
   { name: 'Networking', icon: <FaHandshake />, description: 'Build connections and network with like-minded professionals.' },
 ];

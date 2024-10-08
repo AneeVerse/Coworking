@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Navbar = ({ isScrolled }) => {
   const navItems = [
     { name: 'About Us', url: '#about' },
-    { name: 'Who Are Our Players', url: '#players' },
+    { name: 'Our Players', url: '#players' },
     { name: 'Amenities', url: '#amenities' },
     { name: 'Pricing', url: '#pricing' },
     { name: 'Contact Us', url: '#contact' },
@@ -46,7 +46,7 @@ const Navbar = ({ isScrolled }) => {
         </div>
 
         {/* Navbar for Desktop */}
-        <div className="hidden lg:flex lg:space-x-4 space-x-8">
+        <div className="hidden lg:flex lg:gap-5 xl:gap-8">
           {navItems.map((item, ind) => (
             <Link
               key={ind}
@@ -60,13 +60,10 @@ const Navbar = ({ isScrolled }) => {
 
         {/* Phone Number for Desktop */}
         <div className="hidden lg:flex items-center space-x-4">
-          <Link
-            href="tel:+919136062437 "
-            className={`flex items-center space-x-2 ${isScrolled ? "text-gray-800 hover:text-[#7a634b]" : "text-gray-200 hover:text-[#ffff]"} transition-all`}
-          >
-            <FiPhoneCall className="text-lg" />
-            <span>+91 9136062437</span>
-          </Link>
+        <Link href="#" className="text-[#ffffff] flex justify-center items-center bg-[#7a634b] rounded-lg py-2 px-4 text-center font-semibold">
+              
+              <span>{"Partner With Us".toUpperCase()}</span>
+            </Link>
         </div>
       </div>
 
@@ -122,10 +119,9 @@ const Navbar = ({ isScrolled }) => {
 
             {/* Contact Information */}
             <div className="pt-8 border-t border-gray-300">
-              <p className="text-sm text-gray-600">Contact Us</p>
-              <Link href="tel:+919769241829" className="text-gray-800 hover:text-[#7a634b] flex items-center space-x-2 mt-2">
-                <FiPhoneCall className="text-lg" />
-                <span>+91 97692 41829</span>
+              <Link href="#" className="text-[#ffffff] flex justify-center items-center bg-[#7a634b] rounded-lg py-3 px-4 text-center font-semibold">
+              
+                <span>{"Partner With Us".toUpperCase()}</span>
               </Link>
             </div>
           </div>

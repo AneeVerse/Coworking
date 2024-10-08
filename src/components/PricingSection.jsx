@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const pricing = [
-  { name: "1 Hour Pass", des:  <p>Cup Of Coffee<br/>or</p>, price: "₹200", type: "hourly" },
-  { name: "4 Hours Pass", des: "", price: "₹499", type: "hourly" },
-  { name: "6 Hours Pass", des: "", price: "₹599", type: "hourly" },
-  { name: "8 Hours Pass", des: "", price: "₹799", type: "hourly" },
+  { name: "1 Hour Pass", des:  <p>or<br/>Cup Of Coffee</p>, price: "₹200", type: "hourly" },
+  { name: "4 Hours Pass", des: "Free espresso", price: "₹499", type: "hourly" },
+  { name: "6 Hours Pass", des: "Free espresso", price: "₹599", type: "hourly" },
+  { name: "8 Hours Pass", des: "Free espresso", price: "₹799", type: "hourly" },
   { name: "5 Days Pass", des: <p>Saturday & Sunday will charge on Hourly basis</p>, price: "₹4000", type: "day" },
   { name: "10 Days Pass", des: <p>Saturday & Sunday will charge on Hourly basis</p>, price: "₹6999", type: "day" },
   { name: "24 Days Pass", des: <p>Saturday & Sunday will charge on Hourly basis</p>, price: "₹8999", type: "day" },
@@ -137,12 +137,12 @@ const PricingSection = () => {
               <h3 className="text-2xl font-semibold mb-4 text-[#6b533a] uppercase tracking-wider">
                 {plan.name}
               </h3>
-             { plan.des && <div className="text-lg text-[#6b533a] font-semibold">
-                {plan.des}
-              </div>}
-              <p className="text-4xl font-bold text-[#6b533a] mb-6">
+              <p className="text-4xl font-bold text-[#6b533a] mb-1">
                 {plan.price}
               </p>
+             { plan.des && <div className="text-lg mb-2 text-[#6b533a] font-semibold">
+                {plan.des}
+              </div>}
               <button
                 onClick={() => handleBookPlan(plan)}
                 className="bg-[#6b533a] text-white px-6 py-3 rounded-full"

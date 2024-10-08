@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaLaptop, FaRocket, FaMugHot, FaBaby, FaBook, FaUserCircle } from 'react-icons/fa'; // Updated icons
+import { GrCafeteria } from "react-icons/gr";
 
 const players = [
   { name: 'Someone who wants a space to work in peace', icon: <FaUserCircle /> }, // New description and icon
@@ -9,7 +10,7 @@ const players = [
   { name: 'Startups', icon: <FaRocket /> }, 
   { name: 'Freelancers', icon: <FaMugHot /> }, 
   { name: 'Working Parents', icon: <FaBaby /> }, // New addition and icon for working parents
-  { name: 'Students who want a quiet space', icon: <FaBook /> }, 
+  { name: 'Someone looking for good food & coffee', icon: <GrCafeteria /> }, 
 ];
 
 const PlayerSection = () => {

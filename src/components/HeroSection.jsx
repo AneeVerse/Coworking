@@ -53,10 +53,10 @@ const HeroSection = () => {
             className="text-white"
           >
             <h1 className=" text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-wider leading-tight">
-              1st & Best<br/>Co-working Space with Cafe in New Mumbai
+              1st & Best<br/>Co-working Space with Cafe in Navi Mumbai
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl mb-8">
-              Elevate Work at New Mumbai’s<br/>Top Co-working Space & Cafe.
+              Elevate Work at Navi Mumbai’s<br/>Top Co-working Space & Cafe.
             </p>
             <a href="#pricing" className="bg-[#7a634b] hover:bg-[#574533] text-white px-8 py-3 sm:py-4 rounded-full transition-shadow duration-300 shadow-lg hover:shadow-xl border-[1px] border-white">
               See Plans
