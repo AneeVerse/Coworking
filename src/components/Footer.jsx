@@ -61,7 +61,7 @@ const Footer = () => {
               <FaEnvelope className="mr-2" /> info@casinocafe.in
             </div>
             <div className="flex items-center text-gray-300">
-              <FaMapMarkerAlt className="mr-2" /> Shop #22, Co-Woriking with Cafe, BHAGWATI ELEGANZA, plot #12, near NMMT Bus Depot, Sector 11, Ghansoli, Navi Mumbai, Maharashtra 400701
+              <FaMapMarkerAlt className="mr-2 min-w-max" /> Shop #22, Co-Woriking with Cafe, BHAGWATI ELEGANZA, plot #12, near NMMT Bus Depot, Sector 11, Ghansoli, Navi Mumbai, Maharashtra 400701
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const Footer = () => {
             Reserved.
           </p>
 
-          <Link href={"https://aneeverse.com/en/"} className="text-gray-300 hover:text-gray-100 flex justify-center text-center items-center gap-2">Managed & Designed By Aneeverse
+          <Link href={"https://aneeverse.com/en/"} target="_blank" className="text-gray-300 hover:text-gray-100 flex justify-center text-center items-center gap-2">Managed & Designed By Aneeverse
           <Image src={"/images/aneeverse-logo.png"} width={16} height={16} alt="aneeverse logo"/></Link>
         </div>
       </div>
