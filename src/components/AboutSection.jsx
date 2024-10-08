@@ -70,7 +70,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative w-full h-56 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden">
             <Image
-              src="/images/pic7.png"
+              src="/images/pic7.PNG"
               alt="Workspace 4"
               layout="fill"
               objectFit="cover"
