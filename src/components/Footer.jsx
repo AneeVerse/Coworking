@@ -77,7 +77,7 @@ const Footer = () => {
             Reserved.
           </p>
 
-          <Link href={"https://aneeverse.com/en/"} target="_blank" className="text-gray-300 hover:text-gray-100 flex justify-center text-center items-center gap-2">Managed & Designed By Aneeverse
+          <Link href={"https://www.aneeverse.com"} target="_blank" className="text-gray-300 hover:text-gray-100 flex justify-center text-center items-center gap-2">Managed & Designed By Aneeverse
           <Image src={"/images/aneeverse-logo.png"} width={16} height={16} alt="aneeverse logo"/></Link>
         </div>
       </div>
